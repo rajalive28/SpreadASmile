@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/choose">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/textView2"
+            android:textColor="#D1EAFF"
+            android:layout_marginTop="20dp"
+            android:phoneNumber="true"
+            android:textSize="1dp"
+            android:textIsSelectable="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Select    "
+            android:id="@+id/btnselect2"
+            android:onClick="selectngo"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:layout_alignTop="@+id/btnpre"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Next    "
+            android:id="@+id/btnnext"
+            android:onClick="nextngo"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:layout_alignTop="@+id/btnselect2"
+            android:layout_toRightOf="@+id/btnselect2"
+            android:layout_toEndOf="@+id/btnselect2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:id="@+id/btnpre"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:onClick="prengo"
+            android:layout_marginBottom="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnselect2"
+            android:layout_toStartOf="@+id/btnselect2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sampark"
+            android:id="@+id/textView8"
+            android:textColor="#D1EAFF"
+            android:textSize="30dp"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/btnpre"
+            android:layout_toEndOf="@+id/btnpre"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“Sampark’s mission is to help vulnerable and poor people, especially women, to gain direct control over and improve their lives. This is achieved through educational interventions primarily aimed at increasing people’s income earning ability.”"
+            android:id="@+id/textView16"
+            android:layout_above="@+id/btnselect2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#D1EAFF"
+            android:layout_marginBottom="51dp"
+            android:layout_alignLeft="@+id/btnpre"
+            android:layout_alignStart="@+id/btnpre"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:background="@drawable/sampark"
+            android:layout_marginTop="58dp"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>

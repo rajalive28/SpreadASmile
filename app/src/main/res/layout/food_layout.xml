@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/choose"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You For Your Help"
+            android:id="@+id/TxtThank"
+            android:layout_marginTop="27dp"
+            android:textSize="32dp"
+            android:textColor="#ff53ffc0"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Type"
+            android:textColor="#D1EAFF"
+            android:id="@+id/TxtFoodType"
+            android:textSize="26dp"
+
+            android:layout_marginTop="84dp"
+            android:singleLine="false"
+            android:layout_below="@+id/tvname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. of people you can serve"
+            android:id="@+id/TxtNoppl"
+            android:textSize="26dp"
+            android:textColor="#D1EAFF"
+            android:layout_marginTop="71dp"
+            android:layout_below="@+id/TxtFoodType"
+            android:layout_alignLeft="@+id/TxtFoodType"
+            android:layout_alignStart="@+id/TxtFoodType"
+            android:layout_toStartOf="@+id/textView"
+            android:layout_toLeftOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:id="@+id/TxtArea"
+            android:textSize="26dp"
+            android:textColor="#D1EAFF"
+            android:layout_marginTop="57dp"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignLeft="@+id/TxtNoppl"
+            android:layout_alignStart="@+id/TxtNoppl" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btnSearchNGO"
+            android:onClick="searchngo"
+            android:text="Search NGO"
+            android:textColor="#D1EAFF"
+            android:textSize="36sp"
+            android:background="@drawable/food"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_toEndOf="@+id/textView"
+            android:focusable="false"
+            android:layout_alignTop="@+id/TxtFoodType"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_above="@+id/TxtNoppl" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_alignTop="@+id/TxtNoppl"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_alignBottom="@+id/TxtNoppl" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner3"
+            android:layout_alignTop="@+id/TxtArea"
+            android:layout_alignLeft="@+id/spinner2"
+            android:layout_alignStart="@+id/spinner2"
+            android:layout_alignBottom="@+id/TxtArea" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/spinner1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvname"
+            android:textSize="32dp"
+            android:textColor="#ff53ffc0"
+            android:layout_below="@+id/TxtThank"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <Gallery
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallery"
+        android:layout_gravity="right" />
+
+
+</LinearLayout>

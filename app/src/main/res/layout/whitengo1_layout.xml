@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/choose"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/textVi2"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="1dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Select    "
+            android:id="@+id/btnselect2"
+            android:onClick="selectngo"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:layout_alignTop="@+id/btnpre"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Next    "
+            android:id="@+id/btnnext"
+            android:onClick="nextngo"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:layout_alignTop="@+id/btnselect2"
+            android:layout_toRightOf="@+id/btnselect2"
+            android:layout_toEndOf="@+id/btnselect2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:id="@+id/btnpre"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:onClick="prengo"
+            android:layout_marginBottom="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnselect2"
+            android:layout_toStartOf="@+id/btnselect2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dream a Dream"
+            android:id="@+id/textView6"
+            android:textColor="#D1EAFF"
+            android:layout_marginTop="19dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dream a Dream is an award-winning, professional charitable trust registered and based out of Bangalore. We have been working with young people from vulnerable backgrounds since 1999. Ours is an entirely collaborative approach with 60 partners, 3000 volunteers, impacting over 60,000 young people each year"
+            android:id="@+id/textView18"
+            android:textColor="#D1EAFF"
+            android:layout_marginBottom="48dp"
+            android:textSize="19dp"
+            android:layout_above="@+id/btnselect2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/btnpre"
+            android:layout_alignStart="@+id/btnpre" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:background="@drawable/dreamadream"
+            android:layout_above="@+id/textView18"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp" />
+    </RelativeLayout>
+</LinearLayout>

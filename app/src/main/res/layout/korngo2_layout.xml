@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/choose">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/textView2"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="1dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Select    "
+            android:id="@+id/btnselect2"
+            android:onClick="selectngo"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:layout_alignTop="@+id/btnpre"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Next    "
+            android:id="@+id/btnnext"
+            android:onClick="nextngo"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:layout_alignTop="@+id/btnselect2"
+            android:layout_toRightOf="@+id/btnselect2"
+            android:layout_toEndOf="@+id/btnselect2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:id="@+id/btnpre"
+            android:background="@drawable/food1"
+            android:textColor="#D1EAFF"
+            android:textSize="22sp"
+            android:onClick="prengo"
+            android:layout_marginBottom="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnselect2"
+            android:layout_toStartOf="@+id/btnselect2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable india"
+            android:id="@+id/textView10"
+            android:textColor="#D1EAFF"
+            android:layout_marginTop="39dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EnAble India&apos;s mission is to empower persons with disability. The mission is founded on the firm belief that the disabled do not need sympathy -- they need a supportive environment to grow and fulfil their needs, potential and dreams.  EnAble India’s core activities are employment of people with disabilities, pre-employment services, supplemental education, counseling and support services, consultancy and training for other institutions and NGOs and technology services. "
+            android:id="@+id/textView17"
+            android:textColor="#D1EAFF"
+            android:layout_marginBottom="41dp"
+            android:textSize="16dp"
+            android:layout_above="@+id/btnselect2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/btnpre"
+            android:layout_alignStart="@+id/btnpre" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:background="@drawable/enable"
+            android:layout_above="@+id/textView17"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47dp" />
+
+    </RelativeLayout>
+</LinearLayout>
